@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='home-style.css')}}"
+    />
+    <title>HOME</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="{{url_for('static',filename='NutriAux.png')}}"
+        alt="logo"
+      />
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="nutri">NutriAux</label>
+        <ul>
+          <li><a href="{{url_for('reg')}}">Register</a></li>
+          <li><a href="{{url_for('login')}}">Login</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bg-text">
+      <p>
+        <span>NutriAux</span> is a web app that aims at automatically estimating
+        the food attributes such as ingredients and nutritional value by
+        classifing the input image of the food. The person who wishes to use the
+        app must register before using the app. The user can login to their
+        account to see thier respective dashboard with the details of height,
+        weight, BMI that is automatically generated and the amount of calorie
+        that can be taken according to the BMI of the user. The user can upload
+        the image of the food that he has taken. The app will then display the
+        nutritional value of the food. The user can take a note of it and can
+        alter his food habits accoring to his BMI and amount of calories that
+        can be intaken. The user can view the history of the food and the
+        calorie intake details in the histroy page. The user can make use of the
+        support in case of any queries.
+      </p>
+    </div>
+    <section></section>
+  </body>
+</html>
